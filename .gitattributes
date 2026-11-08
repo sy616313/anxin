@@ -1,0 +1,10 @@
+# 统一换行符，避免 Windows 下每次提交都产生整文件差异
+* text=auto eol=lf
+
+# 二进制文件不做换行转换
+*.docx  binary
+*.xlsx  binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.zip   binary
