@@ -1,0 +1,38 @@
+# ---- Office / Word 临时锁文件 ----
+~$*
+*.tmp
+
+# ---- 系统 ----
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- DSH 渲染临时目录 ----
+.dsh-office-*/
+_work/
+
+# ---- Node ----
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- 环境变量与密钥（红线 1）----
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+
+# ---- 微信小程序私有配置 ----
+project.private.config.json
+miniprogram_npm/
+miniprogram/.cache/
+
+# ---- 编辑器 ----
+.vscode/settings.json
+.idea/
+*.swp
