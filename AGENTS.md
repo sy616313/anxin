@@ -93,13 +93,15 @@
 
 - 语言：小程序端原生 JS（WXML/WXSS/JS），引擎端纯 JS（无框架、无第三方依赖）
 - 引擎**不超过 200 行**。超出说明设计错了，先停下来讨论
-- 所有判定函数必须是**纯函数**：输入数据 + 输入柜子 → 输出结果，不读全局、不发请求
-- 每个规则判定必须返回 `clause`（条款出处）。`clause` 为空的规则不允许合入
+- 所有判定函数必须是**纯函数**：`checkCabinet(cabinet, dataset)` / `classifyReagent(keyword, dataset)`，`dataset = { reagents, groups, matrix, rules }` 由调用方装载。**引擎不读文件、不读全局、不发请求**
+- 每个规则判定必须返回 `clause`（条款出处）。`clause` 为空的规则不允许合入，未核实的填 `"TODO-占位"` 并在交接文档登记
+- 每条规则必须附一份 fixture（`engine/test/fixtures/`），**fixture 是规则的一部分，不是额外工作**
 - 中文注释，命名用英文
 
 ### 4.2 数据
 
 - `data/` 下 JSON 是唯一真源。**不允许**在小程序代码里硬编码试剂或规则
+- 小程序运行时读不到仓库路径，必须由 `python scripts/sync_data.py` 把 `data/*.json` 拷进 `miniprogram/data/`；**改完数据必须跑一次，否则小程序读到的还是旧数据**
 - 编码 UTF-8 无 BOM，两空格缩进
 - ID 规范：试剂 `R-0001`、规则 `C-01`、矩阵对 `P-001`、柜子 `CAB-B3`、隐患 `F-YYYYMMDD-NNN`
 - 任何字段不得为空字符串；未知填 `null` 并说明原因
