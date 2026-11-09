@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="h1">应急</view>
+  <view class="sub">溅眼 · 皮肤接触 · 着火 · 泄漏</view>
+
+  <view class="next">
+    本页为 D1 骨架。完整处置流程与本地化信息（最近洗眼器位置、校医院电话）
+    在 D4（任务书 T4.5）上线，文案需经指导教师审核。
+  </view>
+
+  <view class="card" wx:for="{{scenes}}" wx:key="key">
+    <view class="card-title">{{item.title}}</view>
+    <view class="muted">{{item.note}}</view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">本地化信息</view>
+    <view class="muted">
+      洗眼器位置、灭火器位置、校医院与保卫处电话：<text style="color:#C00000;">待采集</text>。
+      在取得实验室负责人许可前不填写，避免给出错误指引。
+    </view>
+  </view>
+
+  <view class="footer">数据版本 {{dataVersion}}</view>
+</view>

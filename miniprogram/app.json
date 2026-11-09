@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/reagent/reagent",
+    "pages/cabinet/cabinet",
+    "pages/emergency/emergency"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#1F3B57",
+    "navigationBarTitleText": "安芯 · 实验室安全台账",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F5F7FA",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#8A94A6",
+    "selectedColor": "#1F3B57",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/reagent/reagent",
+        "text": "查试剂"
+      },
+      {
+        "pagePath": "pages/cabinet/cabinet",
+        "text": "查柜"
+      },
+      {
+        "pagePath": "pages/emergency/emergency",
+        "text": "应急"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

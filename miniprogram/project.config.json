@@ -1,0 +1,20 @@
+{
+  "description": "「安芯」高校实验室安全台账 —— 微信小程序工程",
+  "projectname": "anxin",
+  "appid": "touristappid",
+  "compileType": "miniprogram",
+  "miniprogramRoot": "./",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": false,
+    "nodeModules": false
+  },
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "condition": {}
+}

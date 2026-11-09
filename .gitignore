@@ -20,6 +20,11 @@ npm-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# ---- Python ----
+__pycache__/
+*.pyc
+.venv/
+
 # ---- 环境变量与密钥（红线 1）----
 .env
 .env.*
@@ -31,6 +36,12 @@ secrets.json
 project.private.config.json
 miniprogram_npm/
 miniprogram/.cache/
+
+# ---- 小程序构建产物（由 scripts/sync_data.py 生成，勿入库）----
+# 入库的副本会静默过期；不入库则文件缺失会立刻报错。
+# clone 之后、打开微信开发者工具之前，必须先跑 python scripts/validate_data.py
+miniprogram/data/dataset.js
+miniprogram/engine/index.js
 
 # ---- 编辑器 ----
 .vscode/settings.json
