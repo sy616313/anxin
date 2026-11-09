@@ -1,0 +1,16 @@
+{
+  "ruleId": "C-01",
+  "description": "氧化剂与易燃物同柜：硝酸 + 乙醇 应报红，组级判定为 medium",
+  "cabinet": {
+    "id": "FIX-C-01",
+    "items": [
+      { "reagentId": "R-0001", "amount": "500 mL", "slot": "上层左" },
+      { "reagentId": "R-0011", "amount": "500 mL", "slot": "下层右" }
+    ]
+  },
+  "expect": {
+    "level": "red",
+    "confidence": "medium",
+    "ruleIds": ["C-01"]
+  }
+}
