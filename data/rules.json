@@ -1,0 +1,53 @@
+[
+  {
+    "id": "C-01",
+    "name": "氧化剂与易燃物同柜",
+    "scope": "cabinet",
+    "trigger": {
+      "type": "groupPair",
+      "a": "OX",
+      "b": "FLAM"
+    },
+    "effect": {
+      "level": "red",
+      "title": "柜内同时存在氧化剂与易燃物"
+    },
+    "advice": "将氧化剂移出本柜，改存于专用氧化剂柜；若无法分柜，须做物理隔离并加标识。",
+    "clause": "TODO-占位",
+    "enabled": true
+  },
+  {
+    "id": "C-02",
+    "name": "无机酸与碱同柜",
+    "scope": "cabinet",
+    "trigger": {
+      "type": "groupPair",
+      "a": "ACID_IN",
+      "b": "BASE"
+    },
+    "effect": {
+      "level": "red",
+      "title": "柜内同时存在无机酸与碱"
+    },
+    "advice": "酸碱必须分柜存放；同柜时须用防倾倒隔板完全隔离，并置于不同层高。",
+    "clause": "TODO-占位",
+    "enabled": true
+  },
+  {
+    "id": "C-03",
+    "name": "氧化剂与遇水反应物同柜",
+    "scope": "cabinet",
+    "trigger": {
+      "type": "groupPair",
+      "a": "OX",
+      "b": "WATER_REACT"
+    },
+    "effect": {
+      "level": "red",
+      "title": "柜内同时存在氧化剂与遇水反应物"
+    },
+    "advice": "遇水反应物应存于干燥、无氧化剂的专柜；柜内不得设水源或水喷淋头。",
+    "clause": "TODO-占位",
+    "enabled": true
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "updated": "2026-11-09",
+  "note": "种子矩阵：D1 只收录 3 对，D2 扩到 15 对，D4 扩到 25 对。组序见 groups.json 数组顺序，a 必须早于 b。clause 为 TODO-占位，须在 D2 结束前用 data/checklist.xlsx 核对替换。",
+  "pairs": [
+    {
+      "id": "P-001",
+      "a": "OX",
+      "b": "FLAM",
+      "verdict": "forbidden",
+      "reason": "氧化剂与易燃物混存会显著降低易燃物着火点并加速氧化放热，可能自燃或爆炸。",
+      "clause": "TODO-占位",
+      "ref": "TODO-占位"
+    },
+    {
+      "id": "P-002",
+      "a": "ACID_IN",
+      "b": "BASE",
+      "verdict": "forbidden",
+      "reason": "酸碱中和剧烈放热，可导致容器破裂、飞溅灼伤，并可能引燃邻近可燃物。",
+      "clause": "TODO-占位",
+      "ref": "TODO-占位"
+    },
+    {
+      "id": "P-003",
+      "a": "OX",
+      "b": "WATER_REACT",
+      "verdict": "forbidden",
+      "reason": "遇水反应物释放的氢气等可燃气体与氧化剂接触，极易引发燃烧或爆炸。",
+      "clause": "TODO-占位",
+      "ref": "TODO-占位"
+    }
+  ]
+}
